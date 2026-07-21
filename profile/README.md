@@ -158,7 +158,7 @@
 
 | 이상 이벤트 발생 | 주니어 | 시니어 |
 |---|---|---|
-| <img width="582" height="506" alt="이상 이벤트 발생" src="https://github.com/user-attachments/assets/faac7e24-4756-4ee7-be91-bf9e813e6a2c" /> | <img width="582" height="506" alt="주니어" src="https://github.com/user-attachments/assets/9e0900e0-50ef-4b2f-aafd-7d18428d8a58" /> | <img width="565" height="500" alt="시니어" src="https://github.com/user-attachments/assets/6122f166-a6af-4e34-9474-0b7ba454f977" /> |
+| <img width="582" height="506" alt="이상 이벤트 발생" src="https://github.com/user-attachments/assets/faac7e24-4756-4ee7-be91-bf9e813e6a2c" /> | <img width="582" height="506" alt="주니어" src="https://github.com/user-attachments/assets/9e0900e0-50ef-4b2f-aafd-7d18428d8a58" /> | <img width="565" height="500" alt="시니어" src="https://github.com/user-attachments/assets/b8444157-0aad-4c70-b03f-dfe28db7b259" /> |
 - **RAG**는 설비 조치 매뉴얼, 기술 문서·사양, 과거 장애 사례, 체크리스트 등 AI가 참고할 지식 문서를 벡터 데이터베이스에 저장
 - 이상 이벤트가 입력되면 **Vector Search**를 통해 이벤트와 유사한 문서를 검색하고, 관련 정보를 LLM의 답변 근거인 **컨텍스트**로 제공
 - **Prompt**에는 AI의 역할과 답변 기준을 정의하고, 답변이 `원인 분석 → 단계별 조치 방법 → 주의사항 → 추가 점검 사항` 순서로 생성되도록 구성
@@ -179,14 +179,14 @@
       <img
         width="100%"
         alt="알림 우선순위 구조"
-        src="https://github.com/user-attachments/assets/a5e3eeea-6c61-441c-b397-da8d6d59c0f7"
+        src="https://github.com/user-attachments/assets/3904ce4a-794d-46fb-b5f2-1d5ecef65e93"
       />
     </td>
     <td align="center" valign="middle">
       <img
         width="100%"
         alt="알림 목록"
-        src="https://github.com/user-attachments/assets/46c92a9a-1235-4221-86e8-148a1382c346"
+        src="https://github.com/user-attachments/assets/7d5e0620-d89d-4cd5-bb2b-b0581a05ef4e"
       />
     </td>
   </tr>
@@ -200,14 +200,14 @@
       <img
         width="100%"
         alt="알림 조치"
-        src="https://github.com/user-attachments/assets/e85fbf11-6f7e-4845-acb6-1d04d5be2e7b"
+        src="https://github.com/user-attachments/assets/e38c6d60-36d0-441e-9bf5-cfc3d2a4acb4"
       />
     </td>
     <td align="center" valign="middle">
       <img
         width="100%"
         alt="알림 상세"
-        src="https://github.com/user-attachments/assets/21d0f903-4014-4dcc-b17f-52ca2bc2692a"
+        src="https://github.com/user-attachments/assets/92ac9743-a85c-4da2-92d5-85c98fd7defd"
       />
     </td>
   </tr>
@@ -238,7 +238,7 @@
 ## ⚙️ System Flow & Core Technologies
 
 ### 서비스 흐름도
-<img width="10268" height="6806" alt="서비스 흐름도" src="https://github.com/user-attachments/assets/6f129567-2396-499e-97af-a79993cdff6b" />
+<img width="10268" height="6806" alt="Group 97 (2)" src="https://github.com/user-attachments/assets/38b3852e-07f1-4505-8b40-5d3cf4d65a91" />
 
 &nbsp;
 ### 데이터 흐름도
@@ -436,7 +436,7 @@
 &nbsp;
 ## 👤 Developers
 
-| <a href="https://github.com/hyein0514" target="_blank"><img width="120" height="120" src="https://github.com/hyein0514.png" /></a> | <a href="https://github.com/kimgeon0802" target="_blank"><img width="120" height="120" src="https://github.com/kimgeon0802.png" /></a> | <a href="https://github.com/qwer9679" target="_blank"><img width="120" height="120" src="https://github.com/qwer9679.png" /></a> | <a href="https://github.com/mmije0ng" target="_blank"><img width="120" height="120" src="https://github.com/mmije0ng.png" /></a> | <a href="https://github.com/chani2104" target="_blank"><img width="120" height="120" src="https://github.com/chani2104.png" /></a> | <a href="https://github.com/sknm1106" target="_blank"><img width="120" height="120" src="https://github.com/sknm1106.png" /></a> |
+| <a href="https://github.com/hyein0514" target="_blank"><img width="120" height="120" src="https://github.com/hyein0514.png" /></a> | <a href="https://github.com/kimgeon0802" target="_blank"><img width="120" height="120" src="https://github.com/kimgeon0802.png" /></a> | <a href="https://github.com/mmije0ng" target="_blank"><img width="120" height="120" src="https://github.com/mmije0ng.png" /></a> | <a href="https://github.com/qwer9679" target="_blank"><img width="120" height="120" src="https://github.com/qwer9679.png" /></a> | <a href="https://github.com/chani2104" target="_blank"><img width="120" height="120" src="https://github.com/chani2104.png" /></a> | <a href="https://github.com/sknm1106" target="_blank"><img width="120" height="120" src="https://github.com/sknm1106.png" /></a> |
 |:-------------:|:------:|:------:|:------:|:------:|:------:|
 | [최혜인(팀장)](https://github.com/hyein0514) | [김건](https://github.com/kimgeon0802) | [박미정](https://github.com/mmije0ng) | [이준호](https://github.com/qwer9679) | [임종찬](https://github.com/chani2104) | [하서경](https://github.com/sknm1106) |
 
