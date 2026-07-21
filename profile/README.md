@@ -5,11 +5,11 @@
 
 **AIMS**: 자동차 제조 공정의 **설비·센서 이벤트를 실시간으로 분석**하여 이상을 탐지하고, 관제사의 신속한 대응을 지원하는 스마트팩토리 통합 관제 플랫폼
 
-- **ML·SHAP 기반 불량 탐지 및 타 공정 전이 예측**
-- **RAG·LLM 기반 관제사 숙련도별 AI 대응 매뉴얼 제공**
-- **위험도·발생 빈도·조치 이력 기반 알림 우선순위 산정**
-- **AGV 운행 상태와 공정별 물류 흐름 실시간 시각화**
-- **Kafka 기반 MSA와 Kubernetes를 활용한 확장·복구 가능한 운영 환경 구축**
+- ML·SHAP 기반 불량 탐지 및 타 공정 전이 예측
+- RAG·LLM 기반 관제사 숙련도별 AI 대응 매뉴얼 제공
+- 위험도·발생 빈도·조치 이력 기반 알림 우선순위 산정
+- AGV 운행 상태와 공정별 물류 흐름 실시간 시각화
+- Kafka 기반 MSA와 Kubernetes를 활용한 확장·복구 가능한 운영 환경 구축
 
 &nbsp;
 ## 📌 Application
@@ -102,7 +102,7 @@
         width="100%"
         height="340"
         alt="검사 현황"
-        src="https://github.com/user-attachments/assets/077cac42-894c-471e-b7c1-ae1507b3486f"
+        src="https://github.com/user-attachments/assets/54c6f757-f744-46d3-841f-5eba239fac1d"
       />
     </td>
     <td align="center" valign="middle">
@@ -110,11 +110,12 @@
         width="100%"
         height="340"
         alt="검사 분석 결과"
-        src="https://github.com/user-attachments/assets/c92b220d-7d46-4979-a7b5-e61928121968"
+        src="https://github.com/user-attachments/assets/aacd3943-f9e5-44c5-af39-95a825a32497"
       />
     </td>
   </tr>
 </table>
+
 
 &nbsp;
 ## ✨ Main Features
@@ -200,14 +201,14 @@
       <img
         width="100%"
         alt="알림 조치"
-        src="https://github.com/user-attachments/assets/e38c6d60-36d0-441e-9bf5-cfc3d2a4acb4"
+        src="https://github.com/user-attachments/assets/7eea0f61-5bdf-4b07-8db4-b91353237202"
       />
     </td>
     <td align="center" valign="middle">
       <img
         width="100%"
-        alt="알림 상세"
-        src="https://github.com/user-attachments/assets/92ac9743-a85c-4da2-92d5-85c98fd7defd"
+        alt="알림 조치 후 상세"
+        src="https://github.com/user-attachments/assets/99de086e-f817-445e-ad7f-f37d17bae989"
       />
     </td>
   </tr>
@@ -283,8 +284,7 @@
 - Kafka를 통해 수신한 제조 이벤트와 공정 분석 결과를 **Elasticsearch에 실시간으로 인덱싱**하여 대용량 데이터를 저장
 - 불량 탐지 결과, 공정 병목 정보, 설비 상태 및 위험도 분석 결과를 **인덱스별로 분리**하여 효율적으로 관리
 - 차량 ID, 공정 코드, 설비 정보, 분석 유형, 위험도 등 **다양한 조건을 조합한 고속 검색·조회 기능**을 제공
-- **Kibana 대시보드**를 통해 Elasticsearch에 저장된 제조 이벤트와 분석 결과를 그래프 및 로그 형태로 시각화
-- Kibana에서 공정·설비·시간·위험도 조건을 기준으로 데이터를 필터링하여 **이상 이벤트와 병목 현황을 직관적으로 확인**
+- **Kibana 대시보드**를 통해 Elasticsearch에 저장된 분석 결과를 그래프 및 로그 형태로 시각화
 - Kafka와 Elasticsearch를 연계하여 데이터 수집부터 검색·분석·대시보드 시각화까지 이어지는 **실시간 제조 데이터 분석 환경**을 구축
 
 &nbsp;
@@ -293,12 +293,8 @@
 
 - 이상 이벤트가 발생하면 분석 결과와 알림 정보를 **WebSocket/STOMP**를 통해 관제 대시보드로 실시간 전송
 - 알림 우선순위, 위험도, 공정·설비 정보 및 발생 시각을 **`/topic/alerts` 채널**로 전달하여 즉시 화면에 반영
-- 새로고침 없이 신규 알림과 상태 변경 내용을 자동 갱신하여 관제사가 긴급한 이상 상황을 빠르게 확인할 수 있도록 구성
 - AGV의 현재 위치, 운반 상태 및 이동 경로 정보를 **`/topic/agv` 채널**로 실시간 전송
 - AGV의 출발·이동·도착 등 상태 변화를 대시보드에 즉시 반영하여 공정별 운반 현황을 실시간으로 관제
-- **React와 Three.js**를 활용해 수신한 AGV 위치 데이터를 3D 화면에 시각화하고, 설비 이상 알림과 운반 상태를 통합 제공
-- WebSocket 연결이 유지되는 동안 서버와 클라이언트가 지속적으로 데이터를 주고받아 **실시간 알림 및 AGV 관제 환경**을 구축
-
 
 &nbsp;
 ## 🚀 Infrastructure & Deployment
